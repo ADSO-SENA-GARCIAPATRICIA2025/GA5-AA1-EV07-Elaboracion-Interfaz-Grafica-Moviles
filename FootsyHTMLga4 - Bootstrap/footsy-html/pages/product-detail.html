@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Air Max 270 — Footsy</title>
+    <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/footsy.css">
+  <link rel="stylesheet" href="../css/pages/product-detail.css">
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar navbar-expand-lg f-navbar">
+    <div class="container-fluid p-0 d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="f-navbar-brand">Footsy</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fNavbarCollapse" aria-controls="fNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="fNavbarCollapse">
+        <ul class="f-navbar-nav navbar-nav ms-lg-4 mb-2 mb-lg-0">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="catalog.html">Catálogo</a></li>
+          <li><a href="catalog.html">Últimos</a></li>
+          <li><a href="contact.html">Contáctenos</a></li>
+        </ul>
+
+        <div class="f-navbar-actions">
+          <div class="f-navbar-search">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <span>Buscar calzado...</span>
+          </div>
+
+          <a href="#" class="f-navbar-icon" title="Mis Favoritos">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </a>
+
+          <a href="cart.html" class="f-navbar-icon" title="Mi Carrito">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="badge-count">2</span>
+          </a>
+
+          <a href="profile.html" class="d-flex align-center gap-8" style="text-decoration:none;">
+            <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Mi Perfil</span>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Avatar" class="f-navbar-avatar">
+          </a>
+          
+          <a href="admin/dashboard.html" class="btn btn-outline-blue btn-sm">Panel Admin</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main>
+
+
+    <div class="product-detail">
+      
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="catalog.html">Catálogo</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Nike Air Max 270</span>
+      </div>
+
+      <!-- Detail Layout -->
+      <div class="product-layout row g-5">
+        
+        <!-- Left Column: Gallery -->
+        <div class="col-12 col-lg-7">
+          <div class="gallery-main">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" alt="Nike Air Max 270 Principal" id="main-img">
+            <span class="discount-badge">-20%</span>
+          </div>
+          <div class="gallery-thumbs d-flex justify-content-center gap-3 mt-3">
+            <div class="gallery-thumb active">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=150&auto=format&fit=crop" alt="Ángulo 1">
+            </div>
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=150&auto=format&fit=crop" alt="Ángulo 2">
+            </div>
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=150&auto=format&fit=crop" alt="Ángulo 3">
+            </div>
+            <div class="gallery-thumb">
+              <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=150&auto=format&fit=crop" alt="Ángulo 4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Info & Action Form -->
+        <div class="col-12 col-lg-5">
+          <div class="product-brand">Nike Performance</div>
+          <h1 class="product-title">Nike Air Max 270 Premium</h1>
+
+          <div class="product-rating">
+            <div class="stars">★★★★★</div>
+            <span class="review-count">(48 reseñas de clientes)</span>
+          </div>
+
+          <div class="product-price-wrap">
+            <div class="product-price">$120.000 COP</div>
+            <div class="product-price-old">$150.000 COP</div>
+            <span class="product-discount">Ahorra 20%</span>
+          </div>
+
+          <p class="product-desc">Diseñado para el corredor urbano y amantes del streetwear. Con la unidad de aire más grande de Nike en el talón, ofrece una pisada ultrasuave que se siente tan increíble como luce. Su ajuste elástico y transpirable mantiene tu pie cómodo todo el día.</p>
+
+          <form action="cart.html" method="GET">
+            
+            <!-- Size Selector -->
+            <div class="option-label">Selecciona tu talla</div>
+            <div class="size-select">
+              <div class="size-opt">38</div>
+              <div class="size-opt">39</div>
+              <div class="size-opt active">40</div>
+              <div class="size-opt">41</div>
+              <div class="size-opt">42</div>
+              <div class="size-opt">43</div>
+            </div>
+            <input type="hidden" name="size" id="selected-size" value="40">
+
+            <!-- Color Selector -->
+            <div class="option-label">Selecciona el color</div>
+            <div class="color-select">
+              <div class="color-opt active" style="background:#EF4444;"></div>
+              <div class="color-opt" style="background:#0F172A;"></div>
+              <div class="color-opt" style="background:#3B82F6;"></div>
+            </div>
+            <input type="hidden" name="color" id="selected-color" value="Rojo">
+
+            <!-- Quantity & Actions -->
+            <div class="qty-wrap">
+              <div class="option-label" style="margin:0;">Cantidad</div>
+              <div class="qty-control">
+                <button type="button" class="qty-btn">−</button>
+                <div class="qty-val" id="qty-display">1</div>
+                <button type="button" class="qty-btn">+</button>
+              </div>
+              <input type="hidden" name="quantity" id="qty-input" value="1">
+            </div>
+
+            <div class="add-actions d-flex flex-column-reverse flex-sm-row gap-3">
+              <button type="button" class="wishlist-big w-100 w-sm-auto" title="Guardar en lista de deseos">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button type="submit" class="btn btn-primary btn-lg flex-grow-1 w-100">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Agregar al Carrito
+              </button>
+            </div>
+          </form>
+
+          <!-- Safe shopping badges -->
+          <div class="product-meta-list">
+            <div class="product-meta-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+              Envío gratis en compras mayores a $200.000 COP
+            </div>
+            <div class="product-meta-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg>
+              Devoluciones gratuitas durante los primeros 30 días
+            </div>
+            <div class="product-meta-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              Pago 100% seguro garantizado
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-grid row g-4 py-5">
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="footer-brand">Footsy</div>
+        <div class="footer-tagline">Where every step feels right!</div>
+        <div class="footer-social d-flex gap-2 mt-3">
+          <a href="#" aria-label="Web">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#">Envíos Gratis</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Guía de Tallas</a></li>
+            <li><a href="#">Seguimiento</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="footer-col">
+          <h5>Mi Cuenta</h5>
+          <ul>
+            <li><a href="profile.html">Perfil</a></li>
+            <li><a href="orders.html">Mis Pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="footer-col">
+          <h5>Información de Contacto</h5>
+          <div class="footer-contact mt-3">
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ciudadela Real, Bucaramanga</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span>+39 377 139 2002</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contacto@footsy.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between py-3 border-top gap-2">
+      <span>© 2026 Footsy. Todos los derechos reservados.</span>
+      <div class="footer-bottom-links d-flex gap-3">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

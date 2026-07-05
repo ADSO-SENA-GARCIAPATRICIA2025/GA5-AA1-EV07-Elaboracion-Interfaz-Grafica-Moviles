@@ -1,0 +1,105 @@
+.auth-page {
+  min-height: 100vh;
+  background: var(--white);
+}
+.auth-visual {
+  overflow: hidden;
+  background: var(--dark-gradient);
+}
+.auth-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+.auth-visual-back {
+  position: absolute;
+  top: 24px; left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--blue-primary);
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.auth-visual-back:hover {
+  transform: translateY(-2px);
+}
+.auth-panel {
+  background: var(--white);
+}
+.auth-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.auth-subtitle { font-size: 15px; color: var(--gray-500); margin-bottom: 40px; font-weight: 500; }
+.auth-form { display: flex; flex-direction: column; gap: 24px; }
+.forgot-link {
+  font-size: 13px;
+  color: var(--blue-primary);
+  font-weight: 700;
+  text-align: right;
+  margin-top: -16px;
+  text-decoration: none;
+}
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--gray-400);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 8px 0;
+}
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gray-200);
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1.8px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gray-700);
+  transition: all var(--transition);
+  cursor: pointer;
+  background: var(--white);
+  width: 100%;
+}
+.social-btn:hover { border-color: var(--gray-400); box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+.register-link {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray-500);
+  margin-top: 12px;
+  font-weight: 500;
+}
+.register-link a { color: var(--blue-primary); font-weight: 700; text-decoration: none; }
+
+/* ── Forgot Password Card specific styling ── */
+.recover-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; background: var(--gray-50); }
+.recover-card { background: var(--white); border-radius: var(--radius-lg); padding: 48px 44px; width: 100%; max-width: 460px; box-shadow: var(--shadow-lg); border: 1px solid var(--gray-200); }
+.recover-logo { font-family: var(--font-display); font-size: 26px; font-weight: 900; color: var(--blue-primary); margin-bottom: 24px; text-align: center; }
+.recover-icon { width: 64px; height: 64px; background: var(--blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; color: var(--blue-primary); }
+.recover-title { font-size: 24px; font-weight: 900; color: var(--gray-900); margin-bottom: 10px; font-family: var(--font-display); text-align: center; letter-spacing: -0.5px; }
+.recover-desc { font-size: 14px; color: var(--gray-500); margin-bottom: 28px; line-height: 1.6; text-align: center; font-weight: 500; }

@@ -1,0 +1,8 @@
+.contact-page { max-width: 900px; margin: 40px auto; padding: 0 48px 80px; }
+.contact-info h2 { font-family:var(--font-display);font-size:32px;font-weight:900;color:var(--gray-900);margin-bottom:12px; }
+.contact-info p { font-size:15px;color:var(--gray-500);line-height:1.7;margin-bottom:32px; font-weight:500; }
+.contact-item { display:flex;gap:14px;margin-bottom:24px; }
+.contact-icon { width:44px;height:44px;background:var(--blue-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--blue-primary);flex-shrink:0; }
+.contact-item-label { font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--gray-400);margin-bottom:4px; }
+.contact-item-value { font-size:14px;font-weight:700;color:var(--gray-800); }
+.contact-form { background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:32px;display:flex;flex-direction:column;gap:16px; box-shadow: var(--shadow-sm); }

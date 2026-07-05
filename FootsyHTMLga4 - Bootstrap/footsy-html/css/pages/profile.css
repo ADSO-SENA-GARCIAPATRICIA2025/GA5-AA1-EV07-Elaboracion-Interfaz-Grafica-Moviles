@@ -1,0 +1,145 @@
+.profile-page { max-width: 960px; margin: 40px auto; padding: 0 48px 80px; }
+
+/* ── Header card ── */
+.profile-header-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.profile-avatar-wrap { position: relative; }
+.profile-avatar {
+  width: 90px; height: 90px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 3px solid var(--blue-light);
+  box-shadow: var(--shadow-sm);
+}
+.avatar-edit-btn {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 28px; height: 28px;
+  background: var(--blue-primary);
+  border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+  border: 2px solid var(--white);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+.profile-name { font-family: var(--font-display); font-size: 26px; font-weight: 900; color: var(--gray-900); }
+.profile-email { font-size: 14px; color: var(--gray-500); margin-top: 2px; font-weight: 500; }
+.profile-tag {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-full);
+  font-size: 13px; font-weight: 700;
+  color: var(--gray-700);
+  background: var(--gray-50);
+}
+.help-card {
+  background: var(--dark-gradient);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  color: var(--white);
+  min-width: 280px;
+  box-shadow: var(--shadow-sm);
+}
+.help-card h4 { font-size: 16px; font-weight: 800; margin-bottom: 8px; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.5px;}
+.help-card p  { font-size: 13px; opacity: .85; line-height: 1.6; margin-bottom: 16px; font-weight: 500; }
+.help-btn {
+  display: block; text-align: center;
+  padding: 10px;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,.6);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-size: 13px; font-weight: 700;
+  transition: all var(--transition);
+}
+.help-btn:hover { background: rgba(255,255,255,.15); border-color: var(--white); }
+
+/* ── Datos personales ── */
+.data-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.data-card-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 16px; font-weight: 800; color: var(--gray-900);
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-display);
+}
+.edit-link { font-size: 13px; color: var(--blue-primary); font-weight: 700; display:flex; align-items:center; gap:6px; }
+.data-field label { font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--gray-400); display: block; margin-bottom: 6px; }
+.data-field span  { font-size: 14px; font-weight: 700; color: var(--gray-800); }
+
+/* ── Pedidos ── */
+.orders-header h3 { font-size: 16px; font-weight: 800; color: var(--gray-900); text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--font-display); }
+.view-all-link { font-size: 13px; color: var(--blue-primary); font-weight: 700; }
+
+.order-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.order-item:last-child { border-bottom: none; }
+.order-thumb {
+  width: 56px; height: 56px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  border: 1px solid var(--gray-200);
+  flex-shrink: 0;
+  background: var(--gray-50);
+}
+.order-info { flex: 1; }
+.order-name { font-size: 14px; font-weight: 700; color: var(--gray-900); }
+.order-meta { font-size: 12px; color: var(--gray-400); margin-top: 4px; font-weight: 600; }
+.order-meta span { margin-right: 12px; }
+.order-price { font-size: 15px; font-weight: 800; color: var(--gray-900); }
+
+/* ── Direcciones ── */
+.addresses-header h3 { font-size: 16px; font-weight: 800; color: var(--gray-900); text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--font-display); }
+.address-card {
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  position: relative;
+  background: var(--white);
+  transition: all var(--transition);
+}
+.address-card:hover { border-color: var(--gray-300); box-shadow: var(--shadow-sm); }
+.address-card.primary { border-color: var(--blue-primary); background: var(--blue-light); }
+.address-type { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; color: var(--gray-900); margin-bottom: 12px; font-family: var(--font-display); }
+.address-primary-badge {
+  font-size: 9px; font-weight: 800; letter-spacing: .5px;
+  background: var(--blue-primary); color: var(--white);
+  padding: 3px 10px; border-radius: var(--radius-full);
+}
+.address-text { font-size: 13px; color: var(--gray-500); line-height: 1.6; font-weight: 500; }
+.address-actions { display: flex; gap: 16px; margin-top: 16px; border-top: 1px solid var(--gray-200); padding-top: 12px; }
+.address-actions a { font-size: 13px; font-weight: 700; color: var(--blue-primary); text-decoration: none; }
+.address-actions a.del { color: var(--danger); }
+
+.address-add {
+  border: 2px dashed var(--gray-300);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 10px;
+  padding: 24px;
+  color: var(--gray-400);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-size: 14px; font-weight: 700;
+  background: var(--gray-50);
+}
+.address-add:hover { border-color: var(--blue-primary); color: var(--blue-primary); background: var(--white); }
+
+/* ── Cerrar sesión ── */
+.logout-wrap { text-align: center; margin-top: 40px; }

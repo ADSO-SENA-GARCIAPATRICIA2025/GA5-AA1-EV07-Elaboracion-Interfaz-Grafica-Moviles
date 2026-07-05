@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil — Footsy</title>
+    <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/footsy.css">
+  <link rel="stylesheet" href="../css/pages/profile.css">
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar navbar-expand-lg f-navbar">
+    <div class="container-fluid p-0 d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="f-navbar-brand">Footsy</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fNavbarCollapse" aria-controls="fNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="fNavbarCollapse">
+        <ul class="f-navbar-nav navbar-nav ms-lg-4 mb-2 mb-lg-0">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="catalog.html">Catálogo</a></li>
+          <li><a href="catalog.html">Últimos</a></li>
+          <li><a href="contact.html">Contáctenos</a></li>
+        </ul>
+
+        <div class="f-navbar-actions">
+          <div class="f-navbar-search">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <span>Buscar calzado...</span>
+          </div>
+
+          <a href="#" class="f-navbar-icon" title="Mis Favoritos">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </a>
+
+          <a href="cart.html" class="f-navbar-icon" title="Mi Carrito">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="badge-count">2</span>
+          </a>
+
+          <a href="profile.html" class="d-flex align-center gap-8" style="text-decoration:none;">
+            <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Mi Perfil</span>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Avatar" class="f-navbar-avatar">
+          </a>
+          
+          <a href="admin/dashboard.html" class="btn btn-outline-blue btn-sm">Panel Admin</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main ── -->
+  <main>
+
+
+    <div class="profile-page">
+
+      <!-- Profile Header Identity Card -->
+      <div class="profile-header-card d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+        <div class="profile-identity d-flex flex-column flex-sm-row align-items-center text-center text-sm-start gap-4">
+          <div class="profile-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Marina Ramírez" class="profile-avatar">
+            <button type="button" class="avatar-edit-btn" title="Cambiar foto de perfil">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <div class="profile-name">Marina Ramírez</div>
+            <div class="profile-email">marina.ramirez@email.com</div>
+            <div class="profile-tags d-flex flex-wrap justify-content-center justify-content-sm-start gap-2">
+              <span class="profile-tag">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color:var(--blue-primary);"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Cliente VIP
+              </span>
+              <span class="profile-tag">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color:var(--pink-banner);"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                2 Pedidos activos
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="help-card w-100 w-md-auto text-center text-md-start">
+          <h4>¿Necesitas ayuda?</h4>
+          <p>Escríbenos si tienes dudas con tus pedidos o devoluciones.</p>
+          <a href="contact.html" class="help-btn">Contactar Soporte</a>
+        </div>
+      </div>
+
+      <!-- Personal Data -->
+      <div class="data-card">
+        <div class="data-card-header d-flex align-items-center justify-content-between mb-4">
+          <div class="data-card-title">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            Datos Personales
+          </div>
+          <a href="#" class="edit-link">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+            Editar Información
+          </a>
+        </div>
+        <div class="data-grid row g-4">
+          <div class="data-field col-12 col-sm-6 col-md-3">
+            <label>Nombre Completo</label>
+            <span>Marina Ramírez</span>
+          </div>
+          <div class="data-field col-12 col-sm-6 col-md-3">
+            <label>Correo Electrónico</label>
+            <span>marina.ramirez@email.com</span>
+          </div>
+          <div class="data-field col-12 col-sm-6 col-md-3">
+            <label>Teléfono</label>
+            <span>+57 300 000 0000</span>
+          </div>
+          <div class="data-field col-12 col-sm-6 col-md-3">
+            <label>Fecha de Nacimiento</label>
+            <span>14 / 09 / 1995</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Orders List -->
+      <div class="data-card">
+        <div class="orders-header d-flex align-items-center justify-content-between mb-3">
+          <h3>Mis Pedidos Recientes</h3>
+          <a href="orders.html" class="view-all-link">Ver todo el historial</a>
+        </div>
+        
+        <div class="order-item d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-3">
+          <img class="order-thumb" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=150&auto=format&fit=crop" alt="Nike Air Max 270">
+          <div class="order-info">
+            <div class="order-name">Nike Air Max 270 Premium (y 1 más)</div>
+            <div class="order-meta d-flex flex-wrap gap-2">
+              <span>Pedido #FT-9402</span>
+              <span>Fecha: 04/07/2026</span>
+              <span class="badge bg-info text-white" style="padding: 4px 8px; font-size: 10px; font-weight:700;">En camino</span>
+            </div>
+          </div>
+          <div class="order-price w-100 w-sm-auto text-start text-sm-end">
+            <div>$265.000</div>
+            <a href="order-detail.html" style="font-size:12px; font-weight:700; color:var(--blue-primary);">Detalles</a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-3">
+          <img class="order-thumb" src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=150&auto=format&fit=crop" alt="New Balance 574">
+          <div class="order-info">
+            <div class="order-name">New Balance 574 Classic</div>
+            <div class="order-meta d-flex flex-wrap gap-2">
+              <span>Pedido #FT-8931</span>
+              <span>Fecha: 12/06/2026</span>
+              <span class="badge bg-success text-white" style="padding: 4px 8px; font-size: 10px; font-weight:700;">Entregado</span>
+            </div>
+          </div>
+          <div class="order-price w-100 w-sm-auto text-start text-sm-end">
+            <div>$95.000</div>
+            <a href="order-detail.html" style="font-size:12px; font-weight:700; color:var(--blue-primary);">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saved Addresses -->
+      <div class="data-card">
+        <div class="addresses-header mb-3">
+          <h3>Direcciones Guardadas</h3>
+        </div>
+        <div class="addresses-grid row g-4">
+          <!-- Address 1 -->
+          <div class="col-12 col-md-6">
+            <div class="address-card primary h-100">
+              <div class="address-type">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color:var(--blue-primary);">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span>Casa</span>
+                <span class="address-primary-badge">PREDETERMINADA</span>
+              </div>
+              <div class="address-text">
+                Calle 56 # 28-34, Apto 302<br>
+                Ciudadela Real, Bucaramanga, Santander<br>
+                Colombia
+              </div>
+              <div class="address-actions">
+                <a href="#">Editar</a>
+                <a href="#" class="del">Eliminar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Address 2 -->
+          <div class="col-12 col-md-6">
+            <div class="address-card h-100">
+              <div class="address-type">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color:var(--gray-500);">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+                <span>Trabajo</span>
+              </div>
+              <div class="address-text">
+                Avenida 15 # 45-12, Oficina 401<br>
+                Bucaramanga, Santander<br>
+                Colombia
+              </div>
+              <div class="address-actions">
+                <a href="#">Editar</a>
+                <a href="#" class="del">Eliminar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="address-add">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
+              </svg>
+              Agregar nueva dirección
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logout Form Link -->
+      <div class="logout-wrap">
+        <a href="login.html" class="btn btn-danger btn-lg" style="box-shadow: none; border-radius: var(--radius-full);">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-right:6px;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Cerrar Sesión
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-grid row g-4 py-5">
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="footer-brand">Footsy</div>
+        <div class="footer-tagline">Where every step feels right!</div>
+        <div class="footer-social d-flex gap-2 mt-3">
+          <a href="#" aria-label="Web">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#">Envíos Gratis</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Guía de Tallas</a></li>
+            <li><a href="#">Seguimiento</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="footer-col">
+          <h5>Mi Cuenta</h5>
+          <ul>
+            <li><a href="profile.html">Perfil</a></li>
+            <li><a href="orders.html">Mis Pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="footer-col">
+          <h5>Información de Contacto</h5>
+          <div class="footer-contact mt-3">
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ciudadela Real, Bucaramanga</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span>+39 377 139 2002</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contacto@footsy.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between py-3 border-top gap-2">
+      <span>© 2026 Footsy. Todos los derechos reservados.</span>
+      <div class="footer-bottom-links d-flex gap-3">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

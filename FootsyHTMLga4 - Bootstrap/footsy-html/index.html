@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footsy — Calzado Exclusivo</title>
+    <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="css/footsy.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar navbar-expand-lg f-navbar">
+    <div class="container-fluid p-0 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="f-navbar-brand">Footsy</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fNavbarCollapse" aria-controls="fNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="fNavbarCollapse">
+        <ul class="f-navbar-nav navbar-nav ms-lg-4 mb-2 mb-lg-0">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="pages/catalog.html">Catálogo</a></li>
+          <li><a href="pages/catalog.html">Últimos</a></li>
+          <li><a href="pages/contact.html">Contáctenos</a></li>
+        </ul>
+
+        <div class="f-navbar-actions">
+          <div class="f-navbar-search">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <span>Buscar calzado...</span>
+          </div>
+
+          <a href="#" class="f-navbar-icon" title="Mis Favoritos">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </a>
+
+          <a href="pages/cart.html" class="f-navbar-icon" title="Mi Carrito">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="badge-count">2</span>
+          </a>
+
+          <a href="pages/profile.html" class="d-flex align-center gap-8" style="text-decoration:none;">
+            <span style="font-size:14px;font-weight:600;color:var(--gray-700);">Mi Perfil</span>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Avatar" class="f-navbar-avatar">
+          </a>
+          
+          <a href="pages/admin/dashboard.html" class="btn btn-outline-blue btn-sm">Panel Admin</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main>
+
+
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <section>
+        <div class="hero d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-lg-start position-relative overflow-hidden">
+          <div class="hero-content col-12 col-lg-6 mb-5 mb-lg-0 p-0">
+            <span class="hero-badge">COLECCIÓN EXCLUSIVA 2026</span>
+            <h1 class="hero-title">CAMINA CON<br>EL ESTILO DEL FUTURO</h1>
+            <p class="hero-subtitle">Experimenta el máximo confort y un diseño vanguardista. Disfruta de hasta un 30% de descuento de lanzamiento en modelos seleccionados.</p>
+            <a href="pages/catalog.html" class="btn btn-primary btn-lg">COMPRAR AHORA</a>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center p-0 position-relative">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop" alt="Zapatos Exclusivos" class="hero-img img-fluid position-relative position-lg-absolute">
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories-section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <p class="section-subtitle">Elige el calzado que mejor se adapte a tu ritmo de vida y estilo personal.</p>
+          </div>
+        </div>
+        <div class="categories-grid row g-4 mt-2">
+          <div class="col-12 col-md-4">
+            <div class="category-card">
+              <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=600&auto=format&fit=crop" alt="Calzado Deportivo">
+              <div class="category-overlay">
+                <span class="category-eyebrow">Alto Rendimiento</span>
+                <h3 class="category-name">Deportivos</h3>
+                <span class="category-price">desde $95.000 COP</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="category-card">
+              <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=600&auto=format&fit=crop" alt="Últimos Modelos">
+              <div class="category-overlay">
+                <span class="category-eyebrow">Moda Urbana</span>
+                <h3 class="category-name">Últimos Modelos</h3>
+                <span class="category-price">desde $110.000 COP</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="category-card">
+              <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600&auto=format&fit=crop" alt="Calzado Casual">
+              <div class="category-overlay">
+                <span class="category-eyebrow">Estilo Formal</span>
+                <h3 class="category-name">Casual y Oficina</h3>
+                <span class="category-price">desde $85.000 COP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Items Section -->
+      <section class="featured-section">
+        <div class="section-header d-flex flex-column flex-sm-row align-items-start align-items-sm-end justify-content-between gap-3">
+          <div>
+            <h2 class="section-title">Artículos Destacados</h2>
+            <p class="section-subtitle">Descubre nuestra selección curada de calzado premium, diseñada para el movimiento y la elegancia.</p>
+          </div>
+          <div class="nav-arrows d-flex gap-2 w-100 w-sm-auto justify-content-start justify-content-sm-end">
+            <button class="nav-arrow" aria-label="Anterior">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="nav-arrow" aria-label="Siguiente">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="products-grid row g-4 mt-3">
+          <!-- Product 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" alt="Nike Air Max 270">
+                <span class="discount-badge">-20%</span>
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-category">Running / Nike</div>
+                <h3 class="product-card-name">Nike Air Max 270</h3>
+                <div class="product-card-price-row">
+                  <div class="price-container">
+                    <span class="product-card-price">$120.000</span>
+                    <span class="product-card-price-old">$150.000</span>
+                  </div>
+                  <div class="add-cart-icon-btn">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=600&auto=format&fit=crop" alt="Adidas Ultraboost 22">
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-category">Running / Adidas</div>
+                <h3 class="product-card-name">Adidas Ultraboost 22</h3>
+                <div class="product-card-price-row">
+                  <div class="price-container">
+                    <span class="product-card-price">$145.000</span>
+                  </div>
+                  <div class="add-cart-icon-btn">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=600&auto=format&fit=crop" alt="Puma RS-X Bold">
+                <span class="discount-badge">-18%</span>
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-category">Casual / Puma</div>
+                <h3 class="product-card-name">Puma RS-X Bold</h3>
+                <div class="product-card-price-row">
+                  <div class="price-container">
+                    <span class="product-card-price">$110.000</span>
+                    <span class="product-card-price-old">$135.000</span>
+                  </div>
+                  <div class="add-cart-icon-btn">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=600&auto=format&fit=crop" alt="New Balance 574 Classic">
+              </div>
+              <div class="product-card-body">
+                <div class="product-card-category">Urban / New Balance</div>
+                <h3 class="product-card-name">NB 574 Classic</h3>
+                <div class="product-card-price-row">
+                  <div class="price-container">
+                    <span class="product-card-price">$95.000</span>
+                  </div>
+                  <div class="add-cart-icon-btn">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo Banner Section -->
+      <section>
+        <div class="promo-banner d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-lg-start position-relative overflow-hidden">
+          <div class="promo-content col-12 col-lg-6 mb-5 mb-lg-0 p-0">
+            <h2 class="promo-title">AHORRA HASTA <span>50%</span> EN NUESTRA TIENDA ONLINE</h2>
+            <p class="promo-desc">Renueva tu colección de calzado con precios insuperables. Envío gratuito en compras superiores a $200.000 COP.</p>
+            <a href="pages/catalog.html" class="btn btn-primary btn-lg">COMPRAR AHORA</a>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-center p-0 position-relative">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=600&auto=format&fit=crop" alt="Promo Calzado" class="promo-img img-fluid position-relative position-lg-absolute">
+          </div>
+        </div>
+      </section>
+
+      <!-- Sport Offer Section -->
+      <section>
+        <div class="sport-offer container-fluid p-0 overflow-hidden">
+          <div class="row g-0">
+            <div class="col-12 col-md-6">
+              <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=600&auto=format&fit=crop" alt="Zapatos Deportivos" class="sport-offer-img w-100 img-fluid" style="object-fit: cover;">
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="sport-offer-body w-100 p-4 p-md-5">
+                <span class="sport-eyebrow">OFERTA POR TIEMPO LIMITADO</span>
+                <h2 class="sport-title">Zapatos<br>Deportivos Pro</h2>
+                <p class="sport-desc">Nuestra ingeniería de punta se une con el diseño editorial más vanguardista. Mayor tracción, amortiguación reactiva y estilo inigualable para tus rutinas diarias.</p>
+                <div class="sport-footer d-flex align-items-center justify-content-between mt-3">
+                  <a href="pages/product-detail.html" class="btn btn-primary">COMPRAR AHORA</a>
+                  <div class="sport-price-wrap">
+                    <span class="sport-price-label">PRECIO ESPECIAL</span>
+                    <span class="sport-price">$85.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-grid row g-4 py-5">
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="footer-brand">Footsy</div>
+        <div class="footer-tagline">Where every step feels right!</div>
+        <div class="footer-social d-flex gap-2 mt-3">
+          <a href="#" aria-label="Web">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#">Envíos Gratis</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Guía de Tallas</a></li>
+            <li><a href="#">Seguimiento</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="footer-col">
+          <h5>Mi Cuenta</h5>
+          <ul>
+            <li><a href="pages/profile.html">Perfil</a></li>
+            <li><a href="pages/orders.html">Mis Pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="footer-col">
+          <h5>Información de Contacto</h5>
+          <div class="footer-contact mt-3">
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ciudadela Real, Bucaramanga</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span>+39 377 139 2002</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="me-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contacto@footsy.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center justify-content-between py-3 border-top gap-2">
+      <span>© 2026 Footsy. Todos los derechos reservados.</span>
+      <div class="footer-bottom-links d-flex gap-3">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
